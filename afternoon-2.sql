@@ -159,7 +159,7 @@ CREATE TABLE products
 );
 
 INSERT INTO products
-    (name)
+    (name, price)
 VALUES
     ('soap'),
     ('cheese'),
@@ -180,7 +180,21 @@ VALUES
     ('1 blah')
 
 SELECT *
-products FROM order WHERE 
+FROM products
+WHERE person_id = person_id
+
+SELECT *
+FROM orders
+
+SELECT price, SUM(price)
+FROM orders
+
+ALTER TABLE orders
+ADD CONSTRAINT constraint_name FOREIGN KEY (o) REFERENCES users (u);
+
+
+
+
 
 
 
